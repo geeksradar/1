@@ -3,7 +3,7 @@
 #Initializing Configuration
 gcloud init < a
 
-cookie='replace with ur cookie'
+cookie='_ga=GA1.2.138603024.1606913934; variant_determinant=977; __zlcmid=11Sjd3qnsQYUTDd; _gid=GA1.2.1729571221.1607585941; ajs_user_id=%22run-77d3bb4a61ea0be45d7bf1417d59fb1a%22; ajs_anonymous_id=%220205f4ca-a2a0-4bb0-8700-67a8e7983f28%22; _gat=1; _cvl-4_1_14_session=YjRuQzNPWmpGaDZUN1ovRld6TTZWZmFFVlJmUDFRei82VmRZRkZ6L2hFanBpOGY2aFBFbVk4MnlueDNWcUl2ZmdJYmpzRUs1UnlHQ2hUT3hRTkdwdkhBS01GbTh0OGJJeVFhMUNjTTEweFVxcGEvT2g1VjA1bzB2UVVBbHFnUVEwSVFVMkVHcVZjMHAwOTZIdjUrUTJqZTNrcTBMS0JldW91N2RpMGNsdzAyTU95ek1iZUFDZkEzUzI3aHcyekdoYUFmOUc3WU5GeGUzWWRkMWk5UE1kM3FHV3B5UUZ4M1hsMy8zK3J0OXdwYkN0RitwTDlCK0FIOU5xR3ZITWphUmtGbWREZU1aS1oxRG5Yd0I3ZUJLN3JNWmN2TkxLTnNxc0NhOW9VVkJET1R5QS8zcVhDZldrVXZiS2QwK09ySzFvNnFHcWNUa3hTT2xLSlk3ZWhWazZ5KzFhYmpnSFA5MXdLdSthTFBSQ2t5R0RvWFBSVHlIUE15VmxhNFZ6a2ZwemZCYUhjVGY0WUJwQXJxVUsvZFU3YVVOQnA1WUlkdGxYMTZXVXhiRVJGY2lWZlVsQ2RURnZzTTkrS3J0Zyszai0teGtjSk90WkZRaHF3aWM3UWNmMDRSQT09--ea9d4128ea694d55b61a01a709c590b1187111b5'
 ID=$(gcloud info --format='value(config.project)')
 id=$(curl -X GET --header "cookie: $cookie" "https://www.qwiklabs.com/focuses/show_spl/6485.json?parent=game" | jq -r '.labInstanceId')
 echo $id
